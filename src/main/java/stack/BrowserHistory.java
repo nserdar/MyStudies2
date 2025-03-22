@@ -3,8 +3,8 @@ package main.java.stack;
 import java.util.Stack;
 
 public class BrowserHistory {
-    private Stack<String> backStack = new Stack<>();
-    private Stack<String> forwardStack = new Stack<>();
+    private final Stack<String> backStack = new Stack<>();
+    private final Stack<String> forwardStack = new Stack<>();
 
     public void visit(String url) {
         backStack.push(url);

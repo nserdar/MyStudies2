@@ -3,8 +3,8 @@ package main.java.stack;
 import java.util.Stack;
 
 public class UndoRedoEditor {
-    private Stack<String> undoStack = new Stack<>();
-    private Stack<String> redoStack = new Stack<>();
+    private final Stack<String> undoStack = new Stack<>();
+    private final Stack<String> redoStack = new Stack<>();
     private String currentText = "";
 
     public void write(String text) {
